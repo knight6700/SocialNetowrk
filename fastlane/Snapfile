@@ -1,0 +1,16 @@
+# A list of devices you want to take the screenshots from
+devices([
+  "iPhone 14",
+  "iPhone 13"
+])
+
+languages([
+  "en-US",
+  "ar" 
+])
+
+# The name of the project's scheme
+scheme 'SocialNetworkUITests'
+
+# Where is your project (or workspace)? Provide the full path here
+project 'SocialNetwork.xcodeproj'
