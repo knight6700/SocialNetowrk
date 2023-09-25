@@ -1,0 +1,37 @@
+{
+  "default": {
+    "keyword": {
+      "fonts": [
+        {
+          "font": "./fonts/BebasNeue-Regular.ttf",
+          "supported": ["en-US", "ar"]
+        }
+      ]
+    },
+    "title": {
+      "fonts": [
+        {
+          "font": "./fonts/BebasNeue-Regular.ttf",
+          "supported": ["en-US", "ar"]
+        }
+      ],
+      "color": "#545454"
+    },
+    "background": "./background.jpg",
+    "padding": 50
+  },
+  "data": [
+    {
+      "filter": "login",
+      "keyword": {
+        "color": "#d21559"
+      }
+    },
+    {
+      "filter": "posts",
+      "keyword": {
+        "color": "#feb909"
+      }
+    }
+  ]
+}
