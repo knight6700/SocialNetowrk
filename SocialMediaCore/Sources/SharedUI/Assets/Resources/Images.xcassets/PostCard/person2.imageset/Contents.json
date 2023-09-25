@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "https___specials-images.forbesimg.com_imageserve_5bb22ae84bbe6f67d2e82e05_0x0.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E14C0122ABA0ED30049BB1B /* App in Frameworks */ = {isa = PBXBuildFile; productRef = 1E14C0112ABA0ED30049BB1B /* App */; };
+		1E14C0142ABA0ED30049BB1B /* SharedUI in Frameworks */ = {isa = PBXBuildFile; productRef = 1E14C0132ABA0ED30049BB1B /* SharedUI */; };
+		1E3405752ABCD90400B3CCF8 /* netfox in Frameworks */ = {isa = PBXBuildFile; productRef = 1E3405742ABCD90400B3CCF8 /* netfox */; };
+		1E7265C02AC1718E008C156B /* HorizonStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 1E7265BF2AC1718E008C156B /* HorizonStorage */; };
+		1E7265C22AC17192008C156B /* NetworkHerizon in Frameworks */ = {isa = PBXBuildFile; productRef = 1E7265C12AC17192008C156B /* NetworkHerizon */; };
+		1E7265C42AC171A0008C156B /* SharedModels in Frameworks */ = {isa = PBXBuildFile; productRef = 1E7265C32AC171A0008C156B /* SharedModels */; };
+		1E7265C62AC21FD8008C156B /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7265C52AC21FD8008C156B /* SnapshotHelper.swift */; };
 		1EDA13442AB8CBBC00E3A7D9 /* SocialNetworkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDA13432AB8CBBC00E3A7D9 /* SocialNetworkApp.swift */; };
 		1EDA13462AB8CBBC00E3A7D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDA13452AB8CBBC00E3A7D9 /* ContentView.swift */; };
 		1EDA13482AB8CBBD00E3A7D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EDA13472AB8CBBD00E3A7D9 /* Assets.xcassets */; };
 		1EDA134B2AB8CBBD00E3A7D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EDA134A2AB8CBBD00E3A7D9 /* Preview Assets.xcassets */; };
 		1EDA134D2AB8CBBD00E3A7D9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDA134C2AB8CBBD00E3A7D9 /* Persistence.swift */; };
-		1EDA13502AB8CBBD00E3A7D9 /* SocialNetwork.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1EDA134E2AB8CBBD00E3A7D9 /* SocialNetwork.xcdatamodeld */; };
 		1EDA135A2AB8CBBE00E3A7D9 /* SocialNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDA13592AB8CBBE00E3A7D9 /* SocialNetworkTests.swift */; };
 		1EDA13642AB8CBBE00E3A7D9 /* SocialNetworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDA13632AB8CBBE00E3A7D9 /* SocialNetworkUITests.swift */; };
 		1EDA13662AB8CBBE00E3A7D9 /* SocialNetworkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDA13652AB8CBBE00E3A7D9 /* SocialNetworkUITestsLaunchTests.swift */; };
@@ -36,13 +42,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E14BFFF2AB9FB480049BB1B /* SocialMediaCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SocialMediaCore; sourceTree = "<group>"; };
+		1E14C0152ABCB5470049BB1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1E7265C52AC21FD8008C156B /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 		1EDA13402AB8CBBC00E3A7D9 /* SocialNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EDA13432AB8CBBC00E3A7D9 /* SocialNetworkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworkApp.swift; sourceTree = "<group>"; };
 		1EDA13452AB8CBBC00E3A7D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1EDA13472AB8CBBD00E3A7D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EDA134A2AB8CBBD00E3A7D9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1EDA134C2AB8CBBD00E3A7D9 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		1EDA134F2AB8CBBD00E3A7D9 /* SocialNetwork.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SocialNetwork.xcdatamodel; sourceTree = "<group>"; };
 		1EDA13552AB8CBBE00E3A7D9 /* SocialNetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialNetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EDA13592AB8CBBE00E3A7D9 /* SocialNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworkTests.swift; sourceTree = "<group>"; };
 		1EDA135F2AB8CBBE00E3A7D9 /* SocialNetworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialNetworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +63,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E7265C02AC1718E008C156B /* HorizonStorage in Frameworks */,
+				1E7265C42AC171A0008C156B /* SharedModels in Frameworks */,
+				1E14C0122ABA0ED30049BB1B /* App in Frameworks */,
+				1E7265C22AC17192008C156B /* NetworkHerizon in Frameworks */,
+				1E14C0142ABA0ED30049BB1B /* SharedUI in Frameworks */,
+				1E3405752ABCD90400B3CCF8 /* netfox in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,13 +89,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E14C0002ABA00CF0049BB1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1EDA13372AB8CBBC00E3A7D9 = {
 			isa = PBXGroup;
 			children = (
+				1E14BFFF2AB9FB480049BB1B /* SocialMediaCore */,
 				1EDA13422AB8CBBC00E3A7D9 /* SocialNetwork */,
 				1EDA13582AB8CBBE00E3A7D9 /* SocialNetworkTests */,
 				1EDA13622AB8CBBE00E3A7D9 /* SocialNetworkUITests */,
 				1EDA13412AB8CBBC00E3A7D9 /* Products */,
+				1E14C0002ABA00CF0049BB1B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +121,11 @@
 		1EDA13422AB8CBBC00E3A7D9 /* SocialNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				1E14C0152ABCB5470049BB1B /* Info.plist */,
 				1EDA13432AB8CBBC00E3A7D9 /* SocialNetworkApp.swift */,
 				1EDA13452AB8CBBC00E3A7D9 /* ContentView.swift */,
 				1EDA13472AB8CBBD00E3A7D9 /* Assets.xcassets */,
 				1EDA134C2AB8CBBD00E3A7D9 /* Persistence.swift */,
-				1EDA134E2AB8CBBD00E3A7D9 /* SocialNetwork.xcdatamodeld */,
 				1EDA13492AB8CBBD00E3A7D9 /* Preview Content */,
 			);
 			path = SocialNetwork;
@@ -128,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				1EDA13632AB8CBBE00E3A7D9 /* SocialNetworkUITests.swift */,
+				1E7265C52AC21FD8008C156B /* SnapshotHelper.swift */,
 				1EDA13652AB8CBBE00E3A7D9 /* SocialNetworkUITestsLaunchTests.swift */,
 			);
 			path = SocialNetworkUITests;
@@ -149,6 +173,14 @@
 			dependencies = (
 			);
 			name = SocialNetwork;
+			packageProductDependencies = (
+				1E14C0112ABA0ED30049BB1B /* App */,
+				1E14C0132ABA0ED30049BB1B /* SharedUI */,
+				1E3405742ABCD90400B3CCF8 /* netfox */,
+				1E7265BF2AC1718E008C156B /* HorizonStorage */,
+				1E7265C12AC17192008C156B /* NetworkHerizon */,
+				1E7265C32AC171A0008C156B /* SharedModels */,
+			);
 			productName = SocialNetwork;
 			productReference = 1EDA13402AB8CBBC00E3A7D9 /* SocialNetwork.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +253,9 @@
 				Base,
 			);
 			mainGroup = 1EDA13372AB8CBBC00E3A7D9;
+			packageReferences = (
+				1E3405732ABCD90400B3CCF8 /* XCRemoteSwiftPackageReference "netfox" */,
+			);
 			productRefGroup = 1EDA13412AB8CBBC00E3A7D9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -266,7 +301,6 @@
 				1EDA134D2AB8CBBD00E3A7D9 /* Persistence.swift in Sources */,
 				1EDA13462AB8CBBC00E3A7D9 /* ContentView.swift in Sources */,
 				1EDA13442AB8CBBC00E3A7D9 /* SocialNetworkApp.swift in Sources */,
-				1EDA13502AB8CBBD00E3A7D9 /* SocialNetwork.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +318,7 @@
 			files = (
 				1EDA13662AB8CBBE00E3A7D9 /* SocialNetworkUITestsLaunchTests.swift in Sources */,
 				1EDA13642AB8CBBE00E3A7D9 /* SocialNetworkUITests.swift in Sources */,
+				1E7265C62AC21FD8008C156B /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +463,7 @@
 				DEVELOPMENT_TEAM = UGHK5KXT86;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SocialNetwork/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -438,7 +474,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.amwal-payment-Example.AmwalPaymentExample.SocialNetwork";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fares.socialMedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -457,6 +493,7 @@
 				DEVELOPMENT_TEAM = UGHK5KXT86;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SocialNetwork/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -467,7 +504,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.amwal-payment-Example.AmwalPaymentExample.SocialNetwork";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fares.socialMedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -592,18 +629,44 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCVersionGroup section */
-		1EDA134E2AB8CBBD00E3A7D9 /* SocialNetwork.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				1EDA134F2AB8CBBD00E3A7D9 /* SocialNetwork.xcdatamodel */,
-			);
-			currentVersion = 1EDA134F2AB8CBBD00E3A7D9 /* SocialNetwork.xcdatamodel */;
-			path = SocialNetwork.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
+/* Begin XCRemoteSwiftPackageReference section */
+		1E3405732ABCD90400B3CCF8 /* XCRemoteSwiftPackageReference "netfox" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kasketis/netfox";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
 		};
-/* End XCVersionGroup section */
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1E14C0112ABA0ED30049BB1B /* App */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = App;
+		};
+		1E14C0132ABA0ED30049BB1B /* SharedUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharedUI;
+		};
+		1E3405742ABCD90400B3CCF8 /* netfox */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1E3405732ABCD90400B3CCF8 /* XCRemoteSwiftPackageReference "netfox" */;
+			productName = netfox;
+		};
+		1E7265BF2AC1718E008C156B /* HorizonStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HorizonStorage;
+		};
+		1E7265C12AC17192008C156B /* NetworkHerizon */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NetworkHerizon;
+		};
+		1E7265C32AC171A0008C156B /* SharedModels */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharedModels;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1EDA13382AB8CBBC00E3A7D9 /* Project object */;
 }
