@@ -5,28 +5,34 @@
 //  Created by MahmoudFares on 18/09/2023.
 //
 
+@testable import App
+@testable import SharedUI
+
 import XCTest
-
 final class SocialNetworkUITestsLaunchTests: XCTestCase {
+    let app = XCUIApplication()
 
-    override class var runsForEachTargetApplicationUIConfiguration: Bool {
-        true
-    }
+    override func setUp() {
+        super.setUp()
 
-    override func setUpWithError() throws {
-        continueAfterFailure = false
-    }
-
-    func testLaunch() throws {
-        let app = XCUIApplication()
+        setupSnapshot(app)
         app.launch()
+    }
 
-        // Insert steps here to perform after app launch but before taking a screenshot,
-        // such as logging into a test account or navigating somewhere in the app
-
-        let attachment = XCTAttachment(screenshot: app.screenshot())
-        attachment.name = "Launch Screen"
-        attachment.lifetime = .keepAlways
-        add(attachment)
+    func testExample()  {
+        snapshot("login")
+        let usernameTF = app.textFields["usernameTextField"]
+        let passwordTF = app.secureTextFields["passwordTextField"]
+        let loginButton = app.buttons["loginButton"]
+        usernameTF.typeText("kminchelle")
+        passwordTF.tap()
+        passwordTF.typeText("0lelplR")
+        loginButton.tap()
+        let expectation = XCTNSPredicateExpectation(
+            predicate: NSPredicate(format: "exists == true"),
+            object: usernameTF
+        )
+        let result = XCTWaiter().wait(for: [expectation], timeout: 10)
+        snapshot("posts")
     }
 }
