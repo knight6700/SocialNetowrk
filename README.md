@@ -14,10 +14,33 @@ Social Media App for restaurant reviews.
 
 ## Table of Contents
 - [Introduction](#introduction)
+- [Features](#features)
+- [Libraries](#libraries)
 - [Dependencies](#dependencies)
 
 ## Introduction
 The Social Media app allows users to submit restaurant reviews within the app.
+
+## Features
+ - Login: Handle login with username and password with validation 
+ - Posts List: Display user images and post images
+ - Search Posts
+ - Dark Mode Support
+
+## Libraries
+ - **Shared UI**: Provides shared UI elements such as:
+   - Primary Text Field and Secure Text Field with validation and text formatting
+   - Primary Button for actions, with enable/disable state depending on the view's form
+   - Custom Tab Bar
+   - Search Bar View: Custom search bar to manage search state and clear text
+   - Navigation Bar Style: Customize navigation bar styles, including title, trailing view, and back button
+   - Loading View
+
+ - **Horizon Storage**: Manages local storage for users, including UserDefaults, Keychain, and CoreData.
+
+ - **Horizon Network**: Handles network requests asynchronously using async and await.
+
+ - **Shared Models**: Provides shared models for requests and responses for API communication.
 
 ## Dependencies
 This project uses a dependency management library inspired by SwiftUI's "environment." For more information, please visit [swift-dependencies](https://github.com/pointfreeco/swift-dependencies).
