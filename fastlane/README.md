@@ -31,6 +31,38 @@ Description of what the lane does
 
 Description of what the lane does
 
+### ios build_app
+
+```sh
+[bundle exec] fastlane ios build_app
+```
+
+Build the app
+
+### ios run_tests
+
+```sh
+[bundle exec] fastlane ios run_tests
+```
+
+Run tests
+
+### ios generate_docs
+
+```sh
+[bundle exec] fastlane ios generate_docs
+```
+
+
+
+### ios build_archive_and_upload
+
+```sh
+[bundle exec] fastlane ios build_archive_and_upload
+```
+
+Build, archive, and upload to App Store
+
 ----
 
 This README.md is auto-generated and will be re-generated every time [_fastlane_](https://fastlane.tools) is run.

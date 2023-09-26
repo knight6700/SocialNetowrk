@@ -4,33 +4,25 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AppTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>SocialNetwork-Dev.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>SocialNetwork.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
 		<key>SocialNetworkUITests.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>8</integer>
-		</dict>
-	</dict>
-	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>1EDA133F2AB8CBBC00E3A7D9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>1EDA13542AB8CBBE00E3A7D9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>1EDA135E2AB8CBBE00E3A7D9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
+			<integer>5</integer>
 		</dict>
 	</dict>
 </dict>
