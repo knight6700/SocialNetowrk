@@ -9,29 +9,32 @@ import SwiftUI
 /**
  A custom SwiftUI button view with a primary styling.
 
- `PrimaryButtonView` is designed to be used as a primary action button in your SwiftUI user interface. It provides a stylized button with customizable title text and a predefined action to perform when tapped.
+ `PrimaryButtonView` is designed to serve as the primary action button in your SwiftUI user interface. It offers a stylized button with customizable title text and a specified action to perform when tapped.
 
  - Parameters:
-   - title: The title text to display on the button.
-   - action: A closure representing the action to perform when the button is tapped.
+   - title: The text to display on the button.
+   - isDisable: A boolean flag to enable or disable the button.
+   - identifier: An accessibility identifier for UI testing.
+   - action: A closure representing the action to execute when the button is tapped.
 
- - Example Usage
+ - Example Usage:
  ```swift
  struct ContentView: View {
      var body: some View {
          VStack {
-             // Your other UI components here
+             // Other UI components here
              PrimaryButtonView(
                  title: "Sign in",
+                 isDisable: false,
+                 identifier: "signInButton",
                  action: {
                      // Custom action to perform when the button is tapped
                  }
              )
-             // Your other UI components here
+             // Other UI components here
          }
      }
  }
- ```
  */
 
 public struct PrimaryButtonView: View {

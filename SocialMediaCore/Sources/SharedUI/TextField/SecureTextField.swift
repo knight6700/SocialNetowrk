@@ -13,13 +13,22 @@ import SwiftUI
 
  - Usage
  
-    To use `SecureTextFieldView`, initialize it with a binding to a string representing the text input.
+ To use `SecureTextFieldView`, initialize it with a binding to a `TextFildViewState`.
 
  ```swift
- @State private var password: String = ""
+ @State private var passwordState = TextFildViewState(
+     text: "",
+     subtitle: "Enter your password",
+     keyBoardType: .default,
+     format: { $0 },
+     validate: { _ in true },
+     isSecure: true, // Set to `true` for password fields
+     field: .password, // Use `.password` for password fields
+     identifier: "PasswordTextField"
+ )
 
  var body: some View {
-     SecureTextFieldView(text: $password)
+     SecureTextFieldView(viewState: $passwordState)
  }
  */
 public struct SecureTextFieldView: View {

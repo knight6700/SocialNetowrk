@@ -6,18 +6,19 @@
 //
 
 import SwiftUI
+
 /**
- A custom SwiftUI modifier for styling text fields with optional secure entry mode.
+  A SwiftUI modifier for enhancing the styling of text fields with an optional secure entry button.
 
- `CustomTextFieldModifier` can be applied to SwiftUI text fields to provide consistent styling and an optional secure entry button. It enhances the appearance of text fields by adding padding, a rounded background, and a subtle shadow.
+  `CustomTextFieldModifier` can be applied to SwiftUI text fields to provide consistent styling and the option to include a secure entry button. It improves the visual appearance of text fields by adding padding, a rounded background, and a subtle shadow.
 
- - Usage
- 
-    To apply this modifier to a text field, use the `.modifier` modifier and provide an instance of `CustomTextFieldModifier`. You can also enable the secure entry mode by setting `showSecureButton` to `true`.
+  - Usage:
 
- ```swift
- TextField("Password", text: $password)
-     .customTextFieldStyle(showSecureButton: true)
+  To apply this modifier to a text field, use the `.modifier` modifier and provide an instance of `CustomTextFieldModifier`. You can also enable the secure entry mode by setting `showSecureButton` to `true`.
+
+  ```swift
+  TextField("Password", text: $password)
+      .customTextFieldStyle(showSecureButton: true)
 */
 
 public struct CustomTextFieldModifier: ViewModifier {

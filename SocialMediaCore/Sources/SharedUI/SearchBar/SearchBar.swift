@@ -6,6 +6,19 @@
 //
 
 import SwiftUI
+/**
+ A SwiftUI view representing a search bar with clear button functionality.
+
+ `SearchBarView` is a custom view designed to provide a search input field with a clear button. It is used for searching within your SwiftUI user interface. The view includes a search icon, a text field for entering search queries, and a clear button that appears when the text field is focused.
+
+ - Usage:
+
+ To use `SearchBarView`, initialize it with a `SearchBarViewModel` instance that manages the search functionality.
+
+ ```swift
+ let searchBarViewModel = SearchBarViewModel()
+ SearchBarView(viewModel: searchBarViewModel)
+*/
 
 public struct SearchBarView: View {
     @ObservedObject var viewModel: SearchBarViewModel

@@ -25,4 +25,51 @@ desc "Description of what the lane does"
       frameit(white: true, path: './fastlane/screenshots')
 
   end
+    desc "Build the app"
+  lane :build_app do
+    # Add your Xcode build commands here
+    build_ios_app(
+      scheme: "SocialNetwork",
+      configuration: "Release"
+    )
+  end
+
+  desc "Run tests"
+  lane :run_tests do
+    scan(
+      scheme: "AppTests",
+      device: "iPhone 14 Pro",
+      code_coverage: true
+    )
+  end
+
+lane :generate_docs do
+  # Define your Jazzy configuration here
+  # You can specify the source directory, output directory, and other options
+  jazzy
+
+end
+
+  
+desc "Build, archive, and upload to App Store"
+  lane :build_archive_and_upload do
+    build_app # This is your existing build lane
+    
+    gym( # This will create the .ipa file and archive it
+      workspace: "SocialNetwork.xcworkspace",  # Replace with your workspace name
+      scheme: "SocialNetwork",           # Replace with your app's scheme
+      export_method: "app-store"        # Specify the export method (app-store for App Store distribution)
+    )
+    
+    deliver( # This will upload the archive to the App Store
+      username: "YourAppleIDUsername",
+      app_identifier: "com.fares.socialMedia",
+      ipa: "./path/to/your/app.ipa",    # Path to your .ipa file
+      skip_binary_upload: true,         # Set to false if you want to upload the binary
+      skip_screenshots: true,           # Set to false if you want to upload screenshots
+      skip_metadata: true,              # Set to false if you want to upload app metadata
+      skip_app_version_update: true     # Set to false if you want to update the app version
+    )
+  end
+
 end

@@ -20,7 +20,6 @@
 		1EDA134B2AB8CBBD00E3A7D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EDA134A2AB8CBBD00E3A7D9 /* Preview Assets.xcassets */; };
 		1EDA134D2AB8CBBD00E3A7D9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDA134C2AB8CBBD00E3A7D9 /* Persistence.swift */; };
 		1EDA135A2AB8CBBE00E3A7D9 /* SocialNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDA13592AB8CBBE00E3A7D9 /* SocialNetworkTests.swift */; };
-		1EDA13642AB8CBBE00E3A7D9 /* SocialNetworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDA13632AB8CBBE00E3A7D9 /* SocialNetworkUITests.swift */; };
 		1EDA13662AB8CBBE00E3A7D9 /* SocialNetworkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDA13652AB8CBBE00E3A7D9 /* SocialNetworkUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +53,6 @@
 		1EDA13552AB8CBBE00E3A7D9 /* SocialNetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialNetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EDA13592AB8CBBE00E3A7D9 /* SocialNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworkTests.swift; sourceTree = "<group>"; };
 		1EDA135F2AB8CBBE00E3A7D9 /* SocialNetworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialNetworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1EDA13632AB8CBBE00E3A7D9 /* SocialNetworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworkUITests.swift; sourceTree = "<group>"; };
 		1EDA13652AB8CBBE00E3A7D9 /* SocialNetworkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworkUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,7 +148,6 @@
 		1EDA13622AB8CBBE00E3A7D9 /* SocialNetworkUITests */ = {
 			isa = PBXGroup;
 			children = (
-				1EDA13632AB8CBBE00E3A7D9 /* SocialNetworkUITests.swift */,
 				1E7265C52AC21FD8008C156B /* SnapshotHelper.swift */,
 				1EDA13652AB8CBBE00E3A7D9 /* SocialNetworkUITestsLaunchTests.swift */,
 			);
@@ -317,7 +314,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EDA13662AB8CBBE00E3A7D9 /* SocialNetworkUITestsLaunchTests.swift in Sources */,
-				1EDA13642AB8CBBE00E3A7D9 /* SocialNetworkUITests.swift in Sources */,
 				1E7265C62AC21FD8008C156B /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

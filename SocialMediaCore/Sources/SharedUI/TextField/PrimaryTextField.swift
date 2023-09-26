@@ -14,16 +14,21 @@ import SwiftUI
 
  - Usage
 
- To use `PrimaryTextField`, initialize it with a binding to a string and a placeholder text.
+ To use `PrimaryTextField`, initialize it with a binding to a `TextFildViewState`.
 
  ```swift
- @State private var username: String = ""
+ @State private var usernameState = TextFildViewState(
+     text: "",
+     subtitle: "Enter your username",
+     keyBoardType: .default,
+     format: { $0 },
+     validate: { _ in true },
+     field: .username,
+     identifier: "UsernameTextField"
+ )
 
  var body: some View {
-     PrimaryTextField(
-         text: $username,
-         placeHolder: "Enter your username"
-     )
+     PrimaryTextField(viewState: $usernameState)
  }
  */
 public struct TextFildViewState {
